@@ -13,7 +13,6 @@ document.getElementById("calculate-button").addEventListener("click", function()
 
     const generalAverage = (finalGrades.reduce((acc, val) => acc + val, 0) / finalGrades.length).toFixed(0);
 
-    // Determine award category
     let award = "None";
     if (generalAverage >= 97.5) {
         award = "With Highest Honors";
@@ -22,8 +21,6 @@ document.getElementById("calculate-button").addEventListener("click", function()
     } else if (generalAverage >= 89.5) {
         award = "With Honors";
     }
-
-    // Set general average and award in the table
     document.getElementById("gen-ave").textContent = generalAverage;
     document.getElementById("award").textContent = award;
 });
