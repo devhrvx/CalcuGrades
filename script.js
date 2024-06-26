@@ -1,13 +1,87 @@
+const subjects = {
+    "ict": [
+        "Computer/Web Programming 3 - Computer Programming NC III (Java) (320 hrs)",
+        "Mobile App Programming 1 - Computer Programming NC III (Java) (320 hrs)",
+        "Earth and Life Science",
+        "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Physical Education and Health 2",
+        "Practical Research 1",
+        "Reading and Writing",
+        "Statistics and Probability",
+        "Understanding Culture, Society and Politics"
+    ],
+    "digital-arts": [
+        "Fundamentals of Computer Drawing",
+        "Digital Design and Graphics Manipulation",
+        "Earth and Life Science",
+        "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Physical Education and Health 2",
+        "Practical Research 1",
+        "Reading and Writing",
+        "Statistics and Probability",
+        "Understanding Culture, Society and Politics"
+    ],
+    "abm": [
+        "Fundamentals of ABM",
+        "Business Math",
+        "Earth and Life Science",
+        "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Physical Education and Health 2",
+        "Practical Research 1",
+        "Reading and Writing",
+        "Statistics and Probability",
+        "Understanding Culture, Society and Politics"
+    ],
+    "stem": [
+        "Basic Calculus",
+        "Earth and Life Science",
+        "General Biology",
+        "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Physical Education and Health 2",
+        "Practical Research 1",
+        "Reading and Writing",
+        "Statistics and Probability",
+        "Understanding Culture, Society and Politics"
+    ]
+};
+
+document.getElementById("strand-select").addEventListener("change", function() {
+    const strand = this.value;
+    const subjectsContainer = document.getElementById("subjects-container");
+    
+    subjectsContainer.innerHTML = ""; // Clear existing subjects
+
+    if (subjects[strand]) {
+        subjects[strand].forEach(subject => {
+            subjectsContainer.innerHTML += `
+                <div class="h-container">${subject}</div>
+                <hr>
+                <table>
+                    <tr id="quarters">
+                        <th>1st Quarter</th>
+                        <th>2nd Quarter</th>
+                        <th>Final Grade</th>
+                    </tr>
+                    <tr class="grades-input">
+                        <td><input type="number" class="q1"></td>
+                        <td><input type="number" class="q2"></td>
+                        <td class="final">-</td>
+                    </tr>
+                </table>`;
+        });
+    }
+});
+
 document.getElementById("calculate-button").addEventListener("click", function() {
     const gradeRows = document.querySelectorAll(".grades-input");
     let finalGrades = [];
     
     gradeRows.forEach(row => {
-        const q1 = parseFloat(row.querySelector("#q1").value) || 0;
-        const q2 = parseFloat(row.querySelector("#q2").value) || 0;
+        const q1 = parseFloat(row.querySelector(".q1").value) || 0;
+        const q2 = parseFloat(row.querySelector(".q2").value) || 0;
         const finalGrade = ((q1 + q2) / 2).toFixed(0);
 
-        row.querySelector("#final").textContent = finalGrade;
+        row.querySelector(".final").textContent = finalGrade;
         finalGrades.push(parseFloat(finalGrade));
     });
 
