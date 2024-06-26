@@ -22,12 +22,12 @@ const subjects = {
         "Understanding Culture, Society and Politics"
     ],
     "abm": [
-        "Fundamentals of ABM",
-        "Business Math",
+        "Fundamentals of ABM 1",
         "Earth and Life Science",
         "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
         "Physical Education and Health 2",
         "Practical Research 1",
+        "Principles of Marketing",
         "Reading and Writing",
         "Statistics and Probability",
         "Understanding Culture, Society and Politics"
