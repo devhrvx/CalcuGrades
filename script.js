@@ -54,7 +54,7 @@ const subjects = {
         "Travel and Tourism",
         "Understanding Culture, Society and Politics"
     ],
-    "humms": [
+    "humss": [
         "Creative Writing / Malikhaing Pagsulat",
         "Disciplines and Ideas in the Applied Social Sciences",
         "Earth and Life Science",
