@@ -1,9 +1,9 @@
 const subjects = {
     "ict": [
         "Computer/Web Programming 3 - Computer Programming NC III (Java) (320 hrs)",
-        "Mobile App Programming 1 - Computer Programming NC III (Java) (320 hrs)",
         "Earth and Life Science",
         "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Mobile App Programming 1 - Computer Programming NC III (Java) (320 hrs)",
         "Physical Education and Health 2",
         "Practical Research 1",
         "Reading and Writing",
@@ -33,7 +33,7 @@ const subjects = {
         "Understanding Culture, Society and Politics"
     ],
     "stem": [
-        "Basic Calculus",
+        "Pre Calculus",
         "Earth and Life Science",
         "General Biology",
         "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
@@ -42,7 +42,29 @@ const subjects = {
         "Reading and Writing",
         "Statistics and Probability",
         "Understanding Culture, Society and Politics"
-    ]
+    ],
+    "to": [
+        "Earth and Life Science",
+        "Front Office Services",
+        "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Physical Education and Health 2",
+        "Practical Research 1",
+        "Reading and Writing",
+        "Statistics and Probability",
+        "Travel and Tourism",
+        "Understanding Culture, Society and Politics"
+    ],
+    "humms": [
+        "Creative Writing / Malikhaing Pagsulat",
+        "Disciplines and Ideas in the Applied Social Sciences",
+        "Earth and Life Science",
+        "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
+        "Physical Education and Health 2",
+        "Practical Research 1",
+        "Reading and Writing",
+        "Statistics and Probability",
+        "Understanding Culture, Society and Politics"
+    ],
 };
 
 document.getElementById("strand-select").addEventListener("change", function() {

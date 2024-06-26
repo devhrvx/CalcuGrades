@@ -44,7 +44,12 @@ p {
     margin: 0;
     padding: 0;
 }
-
+#sm {
+    font-family: 'Courier New', monospace;
+    font-size: .5 em;
+    margin-top: -3%;
+    margin-bottom: 2%;
+}
 hr {
     margin: 0;
     border: 0;
